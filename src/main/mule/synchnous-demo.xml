@@ -32,5 +32,6 @@ output application/json
 Response: 'Success']]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="3d553e01-36a3-481b-8a48-a4dd29e957ad" />
 	</flow>
 </mule>
