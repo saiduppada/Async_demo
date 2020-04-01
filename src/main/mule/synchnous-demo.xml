@@ -19,6 +19,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<logger level="INFO" doc:name="Logger" doc:id="fb74bb98-e303-4d88-b962-edf946b13ca2" message="******* Before Publish Consumer *********************" />
 		<vm:publish-consume doc:name="Publish consume" doc:id="b1427321-d74a-413a-ae8c-2bfc5ffc0212" config-ref="VM_Config" queueName="CustomerPubconsumer" timeoutUnit="MINUTES"/>
 		<logger level="INFO" doc:name="Copy_of_Logger1" doc:id="eb873106-c0dd-4280-9644-c6f980e046c8" message="******* After Publish consumer *********************" />
+		<logger level="INFO" doc:name="Logger" doc:id="e394a414-ed0d-4dfc-8f7e-3bc3a953ec79" />
 	</flow>
 	<flow name="synchnous-demoFlow_sub" doc:id="0d54c2df-ad0d-4fc0-ae17-3a2707a8aa69" >
 		<vm:listener queueName="CustomerPubconsumer" doc:name="Listener" doc:id="3d847d07-373d-4c59-ba8c-d6da50923539" config-ref="VM_Config" />
